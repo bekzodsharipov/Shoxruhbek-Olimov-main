@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoxruhbek Olimov</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    .container {
+      max-width: 440px;
+      width: 100%;
+      position: relative;
+      margin: 0 auto;
+      padding: 0 10px;
+      padding-top: 0;
+      font: 400 16px/150% sans-serif;
+    }
+
+    #main-content {
+      position: relative;
+    }
+
+    .header {
+      padding-top: 15px;
+      padding-bottom: 17px;
+    }
+
+    .header__box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .header__text {
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      text-align: center;
+      color: white;
+    }
+
+    .title {
+      font: 400 clamp(28px, 8.9vw, 34px) / 110% "Bebas Neue", sans-serif;
+      text-transform: uppercase;
+      color: white;
+      width: 100%;
+      text-align: center;
+    }
+
+    .title img {
+      margin-bottom: -3px;
+    }
+
+    .title span {
+      background: linear-gradient(90deg, #FEC000 0%, #FFFFFF 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .span {
+      background: linear-gradient(90deg, #FFFFFF 0%, #FF5353 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .expert__img {
+      object-fit: contain;
+      max-width: clamp(275px, 86vw, 351px);
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 15;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .speaker__bg {
+      background-image: url(./images/bg.avif);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 390px;
+      height: 390px;
+      position: absolute;
+      top: 180px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .event__btn {
+      background: linear-gradient(94.13deg, #FF2C2C 13.8%, #FF5B5B 55.11%, #FF2C2C 83%);
+      box-shadow: 0px 4px 0px 0px #D51F1F, 0px 2px 3px 1px #FFFFFF40 inset;
+      border-radius: 12px;
+      height: 78px;
+      border: none;
+      cursor: pointer;
+      max-width: 286px;
+      width: 100%;
+      padding: 27px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 100%;
+      color: white;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -70px;
+      position: relative;
+      z-index: 20;
+      margin-bottom: 5px;
+    }
+
+    .event__btn img {
+      margin-top: -4px;
+    }
+
+    .shaddow {
+      position: absolute;
+      z-index: 30;
+      bottom: 43px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 179px;
+      height: auto;
+    }
+
+    .arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: white;
+      z-index: 10;
+    }
+
+    .arrow p {
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="./css/modal.css" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="./css/modal.css" />
+  </noscript>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <header class="header">
+        <div class="header__box">
+          <img src="./images/logo.avif" alt="kalendar belgisi" style="margin-top: -3px;" class="header__text__img"
+            width="24" height="24" loading="lazy" decoding="async">
+          <p class="header__text">
+            shoxruxbek.olimov
+          </p>
+        </div>
+      </header>
+      <main id="main-content">
+        <h1 class="title">
+          Qanday qilib kuniga
+          <img src="./images/clock.avif" width="31" height="31" loading="lazy" decoding="async" alt="clock">
+          <spans class="span">~2 soat</spans> <br> vaqt ajratib <span>ingliz tilini <br> zavqlanib o’rganish</span>
+          mumkin?
+        </h1>
+
+        <img src="/images/speaker.avif" alt="Investor rasmi" class="expert__img" decoding="async" loading="lazy"
+          width="351" height="358">
+        <div class="speaker__bg"></div>
+
+        <div class="" style="position: relative;">
+          <button class="event__btn registerBtn" type="button">
+            <img src="./images/cursor.png" loading="lazy" decoding="async" width="20" height="23" alt="cursor">
+            RO'YXATDAN O'TISH
+          </button>
+          <img class="shaddow" style="bottom: -17px;" src="./images/shaddow.avif" loading="lazy" decoding="async" width="179" height="53"
+            alt="shaddow">
+        </div>
+
+        <div class="arrow">
+          <p>Kursga oldindan ro’yxatdan o’ting</p>
+          <img src="./images/arrow.png" loading="lazy" decoding="async" alt="arrow">
+        </div>
+
+
+        <div class="description">
+          <h2 class="description__title">Ro’yxatdan o’tsangiz <br> <span>nimalarni qo’lga kiritasiz?</span></h2>
+          <div class="description__row">
+            <div class="description__col">
+              <div class="description__col-min">
+                <img src="./images/info/1.avif" loading="lazy" decoding="async" width="95" height="95" alt="images">
+                <p>Kurs dasturi va <br> batafsil ma’lumotlar</p>
+              </div>
+              <div class="description__col-info">
+                To’liq ma’lumot
+              </div>
+            </div>
+            <div class="description__col">
+              <div class="description__col-min" style="gap: 10px;">
+                <img src="./images/info/2.avif" loading="lazy" decoding="async" width="81" height="73" alt="images">
+                <p>Eng arzon narxda <br> kursga qo’shilish</p>
+              </div>
+              <div class="description__col-info" style="top: -115px;">
+                Narx kafolati
+              </div>
+            </div>
+            <div class="description__col">
+              <div class="description__col-min">
+                <img src="./images/info/3.avif" loading="lazy" decoding="async" width="98" height="95" alt="images">
+                <p>Speakingni AI orqali <br> rivojlantirish uchun <br> bepul qo’llanma</p>
+              </div>
+              <div class="description__col-info">
+                Sun’iy intellekt
+              </div>
+            </div>
+            <div class="description__col">
+              <div class="description__col-min">
+                <img src="./images/info/4.avif" loading="lazy" decoding="async" width="91" height="96" alt="images">
+                <p>Ingliz tilida tutilmasdan <br> ravon gapirish uchun <br> ‘Shadowing’ qo’llanmasi</p>
+              </div>
+              <div class="description__col-info">
+                Natija beradi
+              </div>
+            </div>
+            <div class="description__col description__line">
+              <div class="description__col-min">
+                <img src="./images/info/5.avif" loading="lazy" decoding="async" width="98" height="98" alt="images">
+                <p>Hech qayerda <br> berilmaydigan 16 ta <br> sirli bonuslar!</p>
+              </div>
+              <div class="description__col-info" style="background: white;">
+                Sizga yoqadi
+              </div>
+            </div>
+          </div>
+
+          <button class="event__btn registerBtn" type="button">
+            <img src="./images/cursor.png" loading="lazy" decoding="async" width="20" height="23" alt="cursor">
+            RO'YXATDAN O'TISH
+          </button>
+          <img class="shaddow" style="bottom: 84px;" src="./images/shaddow.avif" loading="lazy" decoding="async" width="179" height="53"
+            alt="shaddow">
+
+          <div class="arrow">
+            <p>Kursga oldindan ro’yxatdan o’ting</p>
+            <img src="./images/arrow.png" loading="lazy" decoding="async" alt="arrow">
+          </div>
+        </div>
+
+        <div class="speaker">
+          <h2 class="description__title">Olimov <span>Shoxruxbek</span></h2>
+
+          <ul class="speaker__nav">
+            <li class="speaker__item">
+              <span>01</span>
+              <p>Vision School asoschisi</p>
+            </li>
+            <li class="speaker__item">
+              <span>02</span>
+              <p>IELTS 8.5 / SAT 1490</p>
+            </li>
+            <li class="speaker__item">
+              <span>03</span>
+              <p>Celta-certified/Londonda ta’lim olgan</p>
+            </li>
+            <li class="speaker__item">
+              <span>04</span>
+              <p>2020-yildan beri 10.000+ <br> o’quvchilarga online ta’lim bergan</p>
+            </li>
+            <img class="speaker__images" src="./images/speakerSecond.avif" loading="lazy" decoding="async" width="325"
+          height="379" alt="">
+          </ul>
+          
+        </div>
+
+     
+
+        <button class="event__btn registerBtn" type="button" style="margin-bottom: 50px;">
+          <img src="./images/cursor.png" loading="lazy" decoding="async" width="20" height="23" alt="cursor">
+          RO'YXATDAN O'TISH
+        </button>
+        <img class="shaddow" style="top: -80px; position: relative; z-index: 20;" src="./images/shaddow.avif" loading="lazy" decoding="async"
+          width="179" height="53" alt="shaddow">
+      </main>
+
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="registrationModal" class="homeModal" style="display: none">
+    <div class="homeModalOverlay"></div>
+    <div class="homeFormContainer">
+      <button class="closeButton" id="closeModalBtn" aria-label="Modalni yopish" title="Yopish">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+          <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="homeFormTop">
+        <h1 class="homeFormTopTitle">
+          Bepul qatnashish uchun ma'lumotlaringizni kiriting!
+        </h1>
+      </div>
+      <form id="registrationForm" name="contact-form">
+        <!-- ISM -->
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
+          <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting"
+            autocomplete="name" />
+          <p class="homeFormErrorText" id="nameError" style="display: none">
+            ❌ Ismingizni kiriting!
+          </p>
+        </div>
+
+        <!-- TELEFON -->
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+
+          <div class="phone-input-container">
+            <!-- LEFT: country -->
+            <button type="button" class="selected-country" id="selectedCountry">
+              <span class="selected-flag" id="selectedCountryFlag">🇺🇿</span>
+
+              <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <span class="selected-code" id="selectedCountryCodeText">+998</span>
+            </button>
+
+            <!-- dropdown -->
+            <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
+
+            <!-- RIGHT: phone input (number span inside) -->
+            <div class="phone-field">
+              <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone" inputmode="numeric"
+                placeholder="88 888 88 88" autocomplete="tel"
+                style="border: none; background-color: transparent;padding-left: 5px;" />
+            </div>
+          </div>
+
+          <p class="homeFormErrorText" id="phoneError" style="display:none">
+            ❌ Telefon raqam mos emas!
+          </p>
+        </div>
+
+        <button type="submit" class="HomeFormBtn" id="submitBtn">
+          DAVOM ETISH
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <script defer src="./js/phoneFormatter.js"></script>
+  <script defer src="./js/app.js"></script>
+</body>
+
+
+</html>
